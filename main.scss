@@ -1,0 +1,87 @@
+$primary: rgb(122, 10, 10);
+$secondary: rgb(95, 83, 2);
+
+// bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+// bootstrap icone
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+// font-family: "Dancing Script", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Protest+Riot&display=swap');
+// font-family: "Calligraffitti", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+// font-family: "PT Serif", serif;
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// font-family: "Montserrat", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.wrap {
+   background-color: whitesmoke;
+}
+.prvni{
+   width: 100vw;
+   min-height: 90vh;
+   background-image: url(https://source.unsplash.com/qQA82TTCN6g);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.lomnica {
+   font-family: "Protest Riot", sans-serif;
+   color: rgb(122, 10, 10);
+   font-size: small;
+}
+h1 {
+   font-family: "Protest Riot", sans-serif;
+   font-size: 3rem;
+   text-shadow: 0 0 10px;
+}
+h2 {
+   font-family: "Calligraffitti", cursive;
+   font-weight: 800;
+   font-size: 2rem;
+}
+h3 {
+   font-family: "Protest Riot", sans-serif;
+   text-shadow: 0 0 10px;
+   color: rgb(122, 10, 10);
+}
+form {
+   background-color: black;
+   opacity: .7;
+   color: white;
+   border-radius: 20px;
+   box-shadow: 0 0 20px lightcoral;
+
+}
+input {
+   background-color: bisque;
+}
+.video {
+   aspect-ratio: 16/9;
+}
+input::placeholder {
+   font-weight: bold;
+ }
+ .oversize {
+   width: 90%;
+ }
+ .font1 {
+   font-family: "PT Serif", serif;
+ }
+ .font2 {
+   font-family: "Montserrat", sans-serif;
+ }
+ p {
+   text-indent: 1rem;
+   line-height: 2;
+   text-align: justify;
+ }
+ h5 {
+   font-family: "Protest Riot", sans-serif;
+ }
+ th {
+   font-weight: 600;
+   font-size: small;
+ }
+ 
+
+

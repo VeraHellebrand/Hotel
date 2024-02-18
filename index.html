@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="cs">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Webovka</title>
+      <link rel="stylesheet" href="main.css" />
+   </head>
+   <body >
+      <div class="wrap">
+         <!-- container-xl prvni stranka -->
+         <section class="container-xl text-center prvni">
+            <!-- header -->
+            <header>
+               <div class="row justify-content-center">
+                  <div class="col">
+                     <h1 class="text-primary">Lomnica <br />*****</h1>
+                     <h2 class="text-secondary">Hotel Vysoké Tatry</h2>
+                  </div>
+               </div>
+               <div class="row justify-content-center">
+                  <!-- formular -->
+                  <form action="" class="row col-sm-8 col-lg-4 gy-3 my-2 pb-3">
+                     <h3 class="text-white">Quick Booking</h3>
+                     <div class="col-12 col-sm-6">
+                        <label for="name" class="form-label">Jméno: </label>
+                        <input
+                           type="text"
+                           name="name"
+                           id="name"
+                           class="form-control"
+                           placeholder="Jan"
+                        />
+                     </div>
+                     <div class="col-12 col-sm-6">
+                        <label for="surname" class="form-label">Příjmení: </label>
+                        <input
+                           type="text"
+                           name="surname"
+                           id="surname"
+                           class="form-control"
+                           placeholder="Horal"
+                        />
+                     </div>
+                     <div class="col-12">
+                        <label for="email" class="form-label"> Email:</label>
+                        <input
+                           type="email"
+                           name="email"
+                           id="email"
+                           class="form-control"
+                           placeholder="janhoral@tatry.sk"
+                        />
+                     </div>
+                     <div class="col-12 col-sm-8">
+                        <label for="number" class="form-label"
+                           >Telefonní číslo:</label
+                        >
+                        <input
+                           type="text"
+                           name="number"
+                           id="number"
+                           class="form-control"
+                           placeholder="+421 123 456 789"
+                        />
+                     </div>
+                     <div class="col-12 col-sm-4">
+                        <label for="count" class="form-label">Počet hostů</label>
+                        <input
+                           type="number"
+                           name="count"
+                           id="count"
+                           class="form-control"
+                        />
+                     </div>
+                     <div class="col-12 col-sm-6">
+                        <label for="arival" class="form-label"
+                           >Datum příjezdu</label
+                        >
+                        <input
+                           type="date"
+                           name="arival"
+                           id="arival"
+                           class="form-control"
+                        />
+                     </div>
+                     <div class="col-12 col-sm-6">
+                        <label for="departure" class="form-label"
+                           >Datum odjezdu</label
+                        >
+                        <input
+                           type="date"
+                           name="departure"
+                           id="departure"
+                           class="form-control"
+                        />
+                     </div>
+                     <div class="col-6">
+                        <button class="btn btn-outline-light btn-lg">
+                           Rezervovat
+                        </button>
+                     </div>
+                     <div class="col-6">
+                        <!-- Button trigger modal -->
+                        <button
+                           type="button"
+                           class="btn btn-primary btn-lg"
+                           data-bs-toggle="modal"
+                           data-bs-target="#tipy"
+                        >
+                           Tipy na výlet
+                        </button>
+                     </div>
+                  </form>
+                  <!-- konec formular -->
+               </div>
+               <!-- Modal -->
+               <div
+                  class="modal fade"
+                  id="tipy"
+                  tabindex="-1"
+                  aria-labelledby="modaltipy"
+                  aria-hidden="true"
+               >
+                  <div class="modal-dialog">
+                     <div class="modal-content bg-primary-subtle">
+                        <div class="modal-header">
+                           <h1 class="modal-title fs-5" id="modaltipy">
+                              Kam na výlet v Tatrách
+                           </h1>
+                        </div>
+                        <div class="modal-body">
+                           <iframe
+                              class="col-12 video"
+                              src="https://www.youtube.com/embed/gqXjnY4nFfM?si=LY3MqnUVNuaKSTsB"
+                              title="YouTube video player"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              allowfullscreen
+                           ></iframe>
+                        </div>
+                        <div class="modal-footer">
+                           <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                           >
+                              Zavřít
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- konec modal -->
+            </header>
+            <!-- konec header -->
+         </section>
+         <!-- konec fluid -->
+         <!-- container xl -->
+         <div class="container-xl text-center bg-secondary-subtle">
+            <!-- aside -->
+            <aside class="row sticky-top">
+               <!-- nav -->
+               <nav class="col-12 navbar bg-primary-subtle navbar-expand-sm ">
+                  <div class="container-fluid">
+                     <a class="navbar-brand" href="#"><div class="lomnica">Lomnica <br>*****</div></a>
+                     <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"   
+                        aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                     >
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavAltMarkup"
+                     >
+                        <div class="navbar-nav">
+                           <a class="nav-link active" aria-current="page" href="#">Home</a>
+                           <a class="nav-link" href="#historie">Historie</a>
+                           <a class="nav-link" href="#cenik">Ceník</a>
+                           <a class="nav-link" href="#galerie">Galerie</a>
+                           <a class="nav-link" href="#kontakty">Kontakty</a>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+               <!-- konec nav -->
+            </aside>
+            <!-- konec aside -->
+            <!-- main -->
+            <main>
+               <!-- historie -->
+               <section class="row mt-5 justify-content-center" id="historie">
+                  <h2>Historie</h2>
+                  <div class="row col-sm-10 gy-3 my-2 bg-light pb-3">
+                     <div class="font1 col-12 col-sm-6 col-lg-3">
+                        <p class="lomnica">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error molestias, praesentium beatae tenetur corrupti dolore ut explicabo vel quisquam expedita?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, excepturi iusto quisquam nobis obcaecati commodi totam corporis quos dolores, sunt, nulla velit. Vitae, nemo autem. Esse natus debitis dolorum rem.</p>
+                        <p>Laudantium consequatur accusamus libero quia alias fugit dolores itaque temporibus nihil provident obcaecati laborum, soluta aperiam. Nihil nemo corrupti voluptatum voluptatibus? Iusto officia possimus eum recusandae. Atque natus ad pariatur.</p>
+                     </div>
+                     <div class="font2 col-12 col-sm-6 col-lg-3">
+                        <p class="lomnica">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia earum iure hic! Deserunt, asperiores sint.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa similique neque fuga, culpa explicabo et repudiandae optio porro. Iure tenetur qui commodi quam rem maiores similique! Sequi, animi quidem? Pariatur!</p>
+                        <p>Commodi fugiat iste aliquam voluptates sit natus, ut similique rem facilis quaerat excepturi soluta earum dolorem pariatur cupiditate autem nulla corrupti delectus iure laborum enim placeat! Quae necessitatibus recusandae enim!</p>
+                     </div>
+                     <div class="d-none d-sm-block col-sm-12 col-lg-6 align-self-center">
+                        <img class="img-responsive oversize" src="https://source.unsplash.com/oJmVzkVStoo" >
+                     </div>
+                  </div>
+               </section>
+               <!-- konec historie -->
+               <!-- cenik -->
+               <section  class="my-5" id="cenik">
+                  <h2>Ceník</h2>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 p-3 bg-primary-subtle">
+                     <div class="col">
+                       <div class="card h-100">
+                         <img src="https://source.unsplash.com/aRT5UCf2MYY" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">Economy</h5>
+                           <table class="table" data-bs-theme="dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Počet osob</th>
+                                  <th scope="col">Cena za noc</th>
+                                  <th scope="col">Cena za týden</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>&#8364</td>
+                                  <td>&#8364</td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>&#8364</td>
+                                  <td>&#8364</td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>&#8364</td>
+                                  <td>&#8364</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <button type="button" class="btn btn-primary">Book</button>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col">
+                       <div class="card h-100">
+                         <img src="https://source.unsplash.com/oxeCZrodz78" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">Standart</h5>
+                           <table class="table" data-bs-theme="dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Počet osob</th>
+                                  <th scope="col">Cena za noc</th>
+                                  <th scope="col">Cena za týden</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>&#8364</td>
+                                  <td>&#8364</td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>&#8364</td>
+                                  <td>&#8364</td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>&#8364</td>
+                                  <td>&#8364</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <button type="button" class="btn btn-primary">Book</button>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col">
+                       <div class="card h-100">
+                         <img src="https://source.unsplash.com/Yrxr3bsPdS0" class="card-img-top" alt="...">
+                         <div class="card-body">
+                           <h5 class="card-title">Deluxe</h5>
+                           <table class="table" data-bs-theme="dark">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Počet osob</th>
+                                  <th scope="col">Cena za noc</th>
+                                  <th scope="col">Cena za týden</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>&#8364</td>
+                                  <td>&#8364</td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>&#8364</td>
+                                  <td>&#8364</td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>&#8364</td>
+                                  <td>&#8364</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <button type="button" class="btn btn-primary">Book</button>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="col">
+                       <div class="card h-100">
+                           <img src="https://source.unsplash.com/5BV56SdvLmo" class="card-img-top" alt="...">
+                           <div class="card-body">
+                              <h5 class="card-title">Superior</h5>
+                              <table class="table" data-bs-theme="dark">
+                                 <thead>
+                                 <tr>
+                                    <th scope="col">Počet osob</th>
+                                    <th scope="col">Cena za noc</th>
+                                    <th scope="col">Cena za týden</th>
+                                 </tr>
+                                 </thead>
+                                 <tbody>
+                                 <tr>
+                                    <td>1</td>
+                                    <td>&#8364</td>
+                                    <td>&#8364</td>
+                                 </tr>
+                                 <tr>
+                                    <td>2</td>
+                                    <td>&#8364</td>
+                                    <td>&#8364</td>
+                                 </tr>
+                                 <tr>
+                                    <td>3</td>
+                                    <td>&#8364</td>
+                                    <td>&#8364</td>
+                                 </tr>
+                                 </tbody>
+                              </table>
+                              <button type="button" class="btn btn-primary">Book</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- konec cenik -->
+               <!-- galerie -->
+               <section class="my-5 row justify-content-center" id="galerie">
+                  <h2>Galerie</h2>
+                  <div id="carouselExampleIndicators" class="carousel slide col-sm-10 col-lg-8">
+                     <div class="carousel-indicators">
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                     </div>
+                     <div class="carousel-inner">
+                       <div class="carousel-item active">
+                         <img src="https://source.unsplash.com/QmeRd3AmPV8" class="d-block w-100" alt="...">
+                       </div>
+                       <div class="carousel-item">
+                         <img src="https://source.unsplash.com/AH8zKXqFITA" class="d-block w-100" alt="...">
+                       </div>
+                       <div class="carousel-item">
+                         <img src="https://source.unsplash.com/DGa0LQ0yDPc" class="d-block w-100" alt="...">
+                       </div>
+                       <div class="carousel-item">
+                        <img src="https://source.unsplash.com/FFklnzFuebw" class="d-block w-100" alt="...">
+                      </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+               </section>
+               <!-- konec galerie -->
+               <section class="row mt-5 bg-primary-subtle py-5" id="Kontakty">
+                  <h2>Kontakty</h2>
+
+                  <div class="row row-cols-1 row-cols-md-3 ">
+                     <div class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.8356199511604!2d20.277707412061904!3d49.16572827125602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e23aaae6fbc9d%3A0xcf62d51a5cef0562!2sHotel%20Lomnica!5e0!3m2!1scs!2scz!4v1707326277733!5m2!1scs!2scz" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                     <div class="col">
+                        <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                           <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                         </svg><br/>
+                         <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                           <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                         </svg><br>
+                         <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                           <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                         </svg>
+                     </div>
+                     <address="col">
+                        <h3>Lomnica <br>*****</h3></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                           <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                           <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                         </svg>
+                        Tatranská Lomnica 92 <br/> 
+                        059 60 Vysoké Tatry <br/>
+                        Slovensko <br/><br/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound-fill" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0"/> 
+                        </svg> +421 987 654 321 <br/><br/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                           <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                           <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                        </svg> lomnica@lomnica.sk
+                     </address>
+                     
+                  </div>
+               </section>
+            </main>
+            <!-- konec main -->
+         </div>
+         <!-- konec container -->
+      </div>
+      <!-- konec wrap -->
+   
+      <!-- scripts -->
+      <script src="bootstrap.bundle.min.js"></script>
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            //navbar
+            const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const collapseNavbar = function () {
+               // Ověříme, zda je navigační menu v rozbalovacím režimu
+               if (window.innerWidth < 992) {
+                  const bsCollapse = new bootstrap.Collapse(
+                     navbarToggler.nextElementSibling,
+                     {
+                        toggle: false,
+                     }
+                  );
+                  bsCollapse.hide();
+               }
+            };
+
+            navLinks.forEach(function (link) {
+               link.addEventListener("click", collapseNavbar);
+            });
+
+            //Vysvětlení:
+            // nextElementSibling je JavaScriptová vlastnost, která vrátí element, který je bezprostředně
+            // následující sourozencem daného elementu v DOM stromu. V tomto případě hledáte element,
+            // který je hned za navbarToggler v HTML struktuře. V kontextu Bootstrap navigace, tento element
+            // obvykle reprezentuje rozbalovací část navigační lišty. Pak vytváříte instanci
+            // Bootstrap Collapse komponenty pro tento element, kterou pak můžete programově skrýt.
+
+            //modal
+            document.querySelectorAll(".modal").forEach(function (modal) {
+               modal.addEventListener("hide.bs.modal", function () {
+                  const memory = this.innerHTML;
+                  this.innerHTML = memory;
+               });
+            });
+         });
+         //Vysvětlení:
+         // document.querySelectorAll('.modal').forEach(function(modal) {...}):
+         // Vybere všechny elementy s třídou modal a pro každý z nich provede funkci uvedenou v těle forEach.
+         // modal.addEventListener('hide.bs.modal', function() {...}): Přidává posluchače událostí pro každé modální okno,
+         // který reaguje na událost hide.bs.modal - událost specifickou pro Bootstrap, která nastane, když se modální okno začíná skrývat.
+         // var memory = this.innerHTML; this.innerHTML = memory;: Ukládá aktuální HTML obsah modálního okna do proměnné memory a
+         // poté ho okamžitě nastavuje zpět. Toto zachovává aktuální stav modálního okna, i když je skryto.
+      </script>
+   </body>
+</html>
